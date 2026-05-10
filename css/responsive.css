@@ -1,0 +1,688 @@
+/* ============================================
+   SUNRISE EDUCATION - RESPONSIVE DESIGN
+   ============================================ */
+
+/* ============================================
+   TABLET DEVICES (768px and below)
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.3em;
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .page-hero h1 {
+        font-size: 2em;
+    }
+
+    .page-hero p {
+        font-size: 1em;
+    }
+
+    /* Grids */
+    .mission-grid,
+    .benefits-grid,
+    .syllabus-grid,
+    .activities-grid,
+    .standout-grid,
+    .values-grid,
+    .team-grid,
+    .goals-container,
+    .contact-options,
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Forms */
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Vision Content */
+    .vision-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Facility Content */
+    .facility-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Story Content */
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Steps Container */
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Headings */
+    h2 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Benefits */
+    .benefit {
+        padding: 15px;
+    }
+
+    .benefit .icon {
+        font-size: 2.5em;
+    }
+
+    /* Contact Cards */
+    .contact-card {
+        padding: 20px;
+    }
+
+    /* Buttons */
+    .cta-btn,
+    .btn-primary,
+    .btn-secondary,
+    .btn-submit {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 1.8em;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Enrollment Steps */
+    .step {
+        padding: 20px 15px;
+    }
+
+    .step h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* ============================================
+   SMALL PHONES (480px and below)
+   ============================================ */
+
+@media (max-width: 480px) {
+    /* Navigation */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.1em;
+    }
+
+    .nav-brand .tagline {
+        display: none;
+    }
+
+    .nav-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .lang-btn {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 15px;
+        min-height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .page-hero {
+        padding: 50px 15px 40px;
+    }
+
+    .page-hero h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .page-hero p {
+        font-size: 0.9em;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    /* Cards */
+    .mission-card,
+    .benefit-card,
+    .activity-card,
+    .team-member,
+    .value-card,
+    .vision-card,
+    .card,
+    .timeline-item,
+    .contact-card,
+    .facility-map {
+        padding: 20px;
+    }
+
+    .mission-card h3,
+    .benefit-card h3,
+    .value-card h3,
+    .team-member h4 {
+        font-size: 1.2em;
+    }
+
+    /* Forms */
+    form {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    /* Buttons */
+    .cta-btn,
+    .btn-primary,
+    .btn-secondary,
+    .btn-submit {
+        padding: 12px 20px;
+        font-size: 0.95em;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+    /* Contact Methods */
+    .contact-methods {
+        margin-top: 20px;
+    }
+
+    .contact-btn {
+        padding: 12px;
+    }
+
+    /* Benefits Grid */
+    .benefit {
+        padding: 12px;
+    }
+
+    .benefit .icon {
+        font-size: 2em;
+    }
+
+    /* FAQ */
+    .faq-item summary {
+        padding: 15px;
+        font-size: 0.95em;
+    }
+
+    .faq-item p {
+        padding: 0 15px 15px;
+        font-size: 0.9em;
+    }
+
+    /* Calendar */
+    .calendar-info {
+        gap: 15px;
+    }
+
+    .term {
+        padding: 20px;
+    }
+
+    .term h4 {
+        font-size: 1.1em;
+    }
+
+    /* Story Timeline */
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .timeline-item h4 {
+        font-size: 1.1em;
+    }
+
+    /* Goals */
+    .goal {
+        padding: 20px;
+    }
+
+    .goal h3 {
+        font-size: 1.1em;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 40px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .cta-section p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 15px 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 1em;
+    }
+
+    .footer-section p {
+        font-size: 0.9em;
+    }
+
+    .footer-bottom {
+        padding-top: 15px;
+        font-size: 0.85em;
+    }
+
+    /* Syllabus Grid */
+    .subject-group {
+        padding: 20px;
+    }
+
+    .subject-group h4 {
+        font-size: 1.1em;
+    }
+
+    .subject-group ul {
+        font-size: 0.9em;
+    }
+
+    /* Contact Options */
+    .contact-options {
+        gap: 15px;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1em;
+    }
+
+    .contact-card p {
+        font-size: 0.9em;
+    }
+
+    /* Story Content */
+    .story-text h3 {
+        font-size: 1.3em;
+    }
+
+    .story-text p {
+        font-size: 0.95em;
+    }
+
+    /* Benefits Section */
+    .benefits {
+        gap: 15px;
+    }
+
+    .benefit h4 {
+        font-size: 1.1em;
+    }
+
+    .benefit p {
+        font-size: 0.95em;
+    }
+
+    /* Responsibility Section */
+    .responsibility ul {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .responsibility li {
+        padding: 10px 0;
+        font-size: 0.95em;
+    }
+
+    /* Vision & Values */
+    .vision-text p {
+        font-size: 1em;
+    }
+
+    .value-card ul {
+        margin-top: 12px;
+    }
+
+    .value-card li {
+        padding: 6px 0;
+        font-size: 0.9em;
+    }
+
+    /* Standout Grid */
+    .standout-card h3 {
+        font-size: 1.2em;
+    }
+
+    .standout-card li {
+        padding: 8px 0;
+        font-size: 0.9em;
+    }
+
+    /* Facility Info */
+    .facility-info h3 {
+        font-size: 1.3em;
+    }
+
+    .facility-info li {
+        font-size: 0.95em;
+    }
+
+    .facility-map h3 {
+        font-size: 1.3em;
+    }
+
+    .facility-map p {
+        font-size: 0.95em;
+    }
+}
+
+/* ============================================
+   LANDSCAPE MODE (orientation: landscape)
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 300px;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .page-hero {
+        padding: 30px 20px 20px;
+    }
+}
+
+/* ============================================
+   LARGE SCREENS (1400px and above)
+   ============================================ */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .mission-grid,
+    .benefits-grid,
+    .syllabus-grid,
+    .activities-grid,
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 4em;
+    }
+
+    .page-hero h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .navbar,
+    .nav-controls,
+    .cta-section,
+    footer,
+    .contact-methods {
+        display: none;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    button,
+    input[type="submit"] {
+        display: none;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY - HIGH CONTRAST
+   ============================================ */
+
+@media (prefers-contrast: more) {
+    :root {
+        --primary-color: #B84C0A;
+        --text-color: #000;
+        --border-color: #333;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ============================================
+   ACCESSIBILITY - REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    .mission-card,
+    .benefit-card,
+    .activity-card,
+    .team-member,
+    .value-card,
+    .vision-card,
+    .card,
+    .timeline-item,
+    .contact-card,
+    .facility-map,
+    form,
+    .contact-methods {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+        border-color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        background-color: #333;
+        color: #e0e0e0;
+        border-color: #555;
+    }
+
+    .missions,
+    .why-sunrise,
+    .curriculum,
+    .core-values,
+    .strategic-goals,
+    .enrollment-steps,
+    .our-team,
+    .our-story,
+    .admission-form-section {
+        background-color: #252525;
+    }
+
+    .text-muted {
+        color: #aaa;
+    }
+
+    .faq-item {
+        background-color: #2a2a2a;
+    }
+
+    .faq-item summary {
+        color: var(--primary-color);
+    }
+
+    .faq-item p {
+        color: #aaa;
+    }
+}
